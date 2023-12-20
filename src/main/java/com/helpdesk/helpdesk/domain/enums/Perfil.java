@@ -1,7 +1,7 @@
 package com.helpdesk.helpdesk.domain.enums;
 
 public enum Perfil {
-	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
+	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
 	
 	private Integer codego;
 	private String decricao;
@@ -30,7 +30,7 @@ public enum Perfil {
 			
 		}
 		
-		throw new Exception("Status inválida");
+		throw new Exception("Prioridade inválida");
 	}
 
 }
